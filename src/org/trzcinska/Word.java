@@ -1,12 +1,8 @@
 package org.trzcinska;
 
 import java.util.HashMap;
-import java.util.Locale;
-import java.util.Set;
 
-// 3. Liczenie słów w tekście: Napisz metodę, która przyjmując String, zwróci HashMapę, w której
-// kluczem jest słowo,a wartością ilość wystąpień w tekście:
-//a. public HashMap<String, Integer> countWords(String text)
+
 
 public class Word {
     public HashMap<String, Integer> countWords(String text) {
