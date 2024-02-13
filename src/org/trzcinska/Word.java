@@ -6,10 +6,12 @@ import java.util.HashMap;
 
 public class Word {
     public HashMap<String, Integer> countWords(String text) {
-        String lowerText = text.toLowerCase();
-        String withoutDots = lowerText.replace("."," ");
+        //String lowerText = text.toLowerCase();
+        String withoutDots = text.replace("."," ");
         String withoutComma = withoutDots.replace(","," ");
-        String fixedText = withoutComma.replace(";"," ");
+        String withoutDoubleSpace = withoutComma.replace(";"," ");
+        String fixedText = withoutDoubleSpace.replace("  "," ");
+
 
         String[] words = fixedText.split(" ");
         HashMap<String, Integer> countWords = new HashMap<>();
