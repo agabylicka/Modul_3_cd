@@ -12,6 +12,9 @@ public class Word {
         String withoutDoubleSpace = withoutComma.replace(";"," ");
         String fixedText = withoutDoubleSpace.replace("  "," ");
 
+        if (fixedText.isEmpty()) {
+            return new HashMap<>();
+        }
 
         String[] words = fixedText.split(" ");
         HashMap<String, Integer> countWords = new HashMap<>();
